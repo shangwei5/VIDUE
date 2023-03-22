@@ -69,27 +69,31 @@ python inference_vidue_worsu.py --default_data GOPRO --m 5(or 7) --n 3(or 1)
 Please change `args.data_path` according to `m` and `n`.
 The results on GoPro ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1v81oA9Tvq_zwMUMeceLVLQ)[password: d3as]
 
+
 ```
 python inference_vidue_worsu.py --default_data Adobe --m 5(or 7) --n 3(or 1)
 ```
 The results on Adobe ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1v81oA9Tvq_zwMUMeceLVLQ)[password: d3as]
+
 
 ```
 python inference_vidue_worsu_16x.py --default_data GOPRO --m 9(or 11,13,15) --n 7(or 5,3,1)
 ```
 The results on GoPro ($\times$ 16 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1v81oA9Tvq_zwMUMeceLVLQ)[password: d3as]
 
+
 ```
 python inference_vidue_worsu_real.py
 ```
 
 ### 3) Training
-Training exposure-aware feature extractor:
+1.Training exposure-aware feature extractor:
 ```
 python main_extractor_weighted_ordinalsupcon.py --template UNet_PRIOR_PREDICT_Weighted_OrdinalSupcon_Light  --save extractor_GoPro8x --process --random
 ```
 Please change `--template` to `UNet_PRIOR_PREDICT_Weighted_OrdinalSupcon_Light_Adobe` and `UNet_PRIOR_PREDICT_Weighted_OrdinalSupcon_Light_16x` for different tasks.
-Training VIDUE:
+
+2.Training VIDUE:
 ```
 python main_vidue_worsu_smph.py --template VIDUE_WORSU --save recon_GoPro8x --random --process
 ```
