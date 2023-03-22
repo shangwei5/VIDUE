@@ -97,6 +97,13 @@ Please change `--template` to `VIDUE_WORSU_Adobe` and `VIDUE_WORSU_16x` for diff
 Please check the dataset path according to yours.
 
 ## Average PSNR/SSIM Values on Benchmark Datasets:
+![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/metrics_gopro8x.png)
+
+![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/metrics_adobe8x.png)
+
+![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/metrics_gopro16x.png)
+
+
 
 
 
