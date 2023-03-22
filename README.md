@@ -45,8 +45,11 @@ Please download the Adobe datasets from [link](https://www.dropbox.com/s/pwjbbrc
         |--video n
 ```
 ## Download Pre-trained Model of VIDUE
+Pre-trained exposure-aware feature extractor on GoPro and Adobe can be downloaded from [here](https://pan.baidu.com/s/1Zf9AbODFtaFexldhmt6_bg?pwd=giu1).
 
-Please put models to './experiments'.
+Download pre-trained VIDUE for [$\times$ 8 interpolation on GoPro](https://pan.baidu.com/s/1_f_G2vdYowqxxiRFkiP18g?pwd=c2sf), [$\times$ 8 interpolation on Adobe](https://pan.baidu.com/s/1P9hKNZBGlMe24xDLZxqHGg?pwd=h5k2), and [$\times$ 16 interpolation on GoPro](https://pan.baidu.com/s/1KciF2INIjEBnGmIetC2X6g?pwd=x8uu).
+
+Please put these models to `./experiments`.
 
 ## Getting Started
 
@@ -67,24 +70,25 @@ This is an example for generating "Adobe-5:8", please change `num_compose` and `
 python inference_vidue_worsu.py --default_data GOPRO --m 5(or 7) --n 3(or 1)
 ```
 Please change `args.data_path` according to `m` and `n`.
-The results on GoPro ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1v81oA9Tvq_zwMUMeceLVLQ)[password: d3as]
+The results on GoPro ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/19_og-5tDZ3Bccp2gQTzEPg?pwd=k1fp).
 
 
 ```
 python inference_vidue_worsu.py --default_data Adobe --m 5(or 7) --n 3(or 1)
 ```
-The results on Adobe ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1v81oA9Tvq_zwMUMeceLVLQ)[password: d3as]
+The results on Adobe ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1ko399DgXUYG5xa_bykwJ2A?pwd=gqug)
 
 
 ```
 python inference_vidue_worsu_16x.py --default_data GOPRO --m 9(or 11,13,15) --n 7(or 5,3,1)
 ```
-The results on GoPro ($\times$ 16 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1v81oA9Tvq_zwMUMeceLVLQ)[password: d3as]
+The results on GoPro ($\times$ 16 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1efzyoyDSWWPlEm_bCTfhGw?pwd=fyhu)
 
 
 ```
 python inference_vidue_worsu_real.py
 ```
+Change `args.model_path` to our pre-trained models or you can finetune on your dataset for testing real-world data.
 
 ### 3) Training
 1.Training exposure-aware feature extractor:
@@ -118,6 +122,9 @@ If you use any part of our code, or VIDUE is useful for your research, please co
       pages     = {0-0}
   }
 ```
+
+## Contact
+If you have any questions, please contact csweishang@gmail.com.
 
 
 
