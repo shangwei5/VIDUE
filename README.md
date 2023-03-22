@@ -1,4 +1,5 @@
 # Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time (CVPR2023)
+### Wei Shang, Dongwei Ren<sup>*</sup>, Yi Yang, Hongzhi Zhang, Kede Ma, Wangmeng Zuo 
 ---
 
 This repository is the official PyTorch implementation of VIDUE: Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time.
