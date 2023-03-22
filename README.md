@@ -54,14 +54,12 @@ Please put models to './experiments'.
 ```
 python generate_blur.py --videos_src_path your_data_path/GoPro_Large_all/test --videos_save_path your_data_path/GoPro_Large_all/LFR_Gopro_53  --num_compose 5  --tot_inter_frame 8
 ```
-This is an example for generating ``GoPro-5:8", please change `num_compose` and 
-`tot_inter_frame` to generate other cases.
+This is an example for generating "GoPro-5:8", please change `num_compose` and `tot_inter_frame` to generate other cases.
 
 ```
 python generate_blur_adobe.py --videos_src_path your_data_path/adobe240/test --videos_save_path your_data_path/adobe240/LFR_Adobe_53  --num_compose 5*3  --tot_inter_frame 8*3
 ```
-This is an example for generating ``Adobe-5:8", please change `num_compose` and 
-`tot_inter_frame` to generate other cases.
+This is an example for generating "Adobe-5:8", please change `num_compose` and `tot_inter_frame` to generate other cases.
 
 
 ### 2) Testing
