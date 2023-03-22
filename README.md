@@ -1,5 +1,4 @@
-# VIDUE
-Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time (CVPR2023)
+# Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time (CVPR2023)
 ---
 ### Introduction
 Natural videos captured by consumer cameras often suffer from low framerate and motion blur due to the combination of dynamic scene complexity, lens and sensor imperfection, and less than ideal exposure setting. As a result, computational methods that jointly perform video frame interpolation and deblurring begin to emerge with the unrealistic assumption that the exposure time is known and fixed. In this work, we aim ambitiously for a more realistic yet challenging task - joint video multi-frame interpolation and deblurring under unknown exposure time. Toward this goal, we first adopt a variant of supervised contrastive learning to construct an exposure-aware representation from input blurred frames. We then train two U-Nets for intra-motion and inter-motion analysis, respectively, adapting to the learned exposure representation via gain tuning. We finally build our video reconstruction network upon the exposure and motion representation by progressive exposure-adaptive convolution and motion refinement.
@@ -47,7 +46,7 @@ Please download the Adobe datasets from [link](https://www.dropbox.com/s/pwjbbrc
 ## Download Pre-trained Model of VIDUE
 Pre-trained exposure-aware feature extractor on GoPro and Adobe can be downloaded from [here](https://pan.baidu.com/s/1Zf9AbODFtaFexldhmt6_bg?pwd=giu1).
 
-Download pre-trained VIDUE for [$\times$ 8 interpolation on GoPro](https://pan.baidu.com/s/1_f_G2vdYowqxxiRFkiP18g?pwd=c2sf), [$\times$ 8 interpolation on Adobe](https://pan.baidu.com/s/1P9hKNZBGlMe24xDLZxqHGg?pwd=h5k2), and [$\times$ 16 interpolation on GoPro](https://pan.baidu.com/s/1KciF2INIjEBnGmIetC2X6g?pwd=x8uu).
+Download pre-trained VIDUE for [x8 interpolation on GoPro](https://pan.baidu.com/s/1_f_G2vdYowqxxiRFkiP18g?pwd=c2sf), [x8 interpolation on Adobe](https://pan.baidu.com/s/1P9hKNZBGlMe24xDLZxqHGg?pwd=h5k2), and [x16 interpolation on GoPro](https://pan.baidu.com/s/1KciF2INIjEBnGmIetC2X6g?pwd=x8uu).
 
 Please put these models to `./experiments`.
 
@@ -66,29 +65,30 @@ This is an example for generating "Adobe-5:8", please change `num_compose` and `
 
 
 ### 2) Testing
+For testing the GoPro dataset ($\times$ 8 interpolation and deblurring):
 ```
 python inference_vidue_worsu.py --default_data GOPRO --m 5(or 7) --n 3(or 1)
 ```
 Please change `args.data_path` according to `m` and `n`.
 The results on GoPro ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/19_og-5tDZ3Bccp2gQTzEPg?pwd=k1fp).
 
-
+For testing the Adobe dataset ($\times$ 8 interpolation and deblurring):
 ```
 python inference_vidue_worsu.py --default_data Adobe --m 5(or 7) --n 3(or 1)
 ```
 The results on Adobe ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1ko399DgXUYG5xa_bykwJ2A?pwd=gqug)
 
-
+For testing the GoPro dataset ($\times$ 16 interpolation and deblurring):
 ```
 python inference_vidue_worsu_16x.py --default_data GOPRO --m 9(or 11,13,15) --n 7(or 5,3,1)
 ```
 The results on GoPro ($\times$ 16 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1efzyoyDSWWPlEm_bCTfhGw?pwd=fyhu)
 
-
+For testing the real world dataset:
 ```
 python inference_vidue_worsu_real.py
 ```
-Change `args.model_path` to our pre-trained models or you can finetune on your dataset for testing real-world data.
+Change `args.model_path` to the path of our pre-trained models or you can finetune on your own dataset for testing real-world data.
 
 ### 3) Training
 1.Training exposure-aware feature extractor:
