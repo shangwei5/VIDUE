@@ -16,6 +16,10 @@ Natural videos captured by consumer cameras often suffer from low framerate and 
 
 
 ## Prerequisites
-- Python >= 3.8, PyTorch >= 1.7.0 (A lower version may also be OK.)
+- Python >= 3.8, PyTorch >= 1.7.0
 - Requirements: opencv-python, numpy, matplotlib, imageio, scikit-image, tqdm
 
+## Datasets
+Please download the GoPro datasets from [link](http://data.cv.snu.ac.kr:8008/webdav/dataset/GOPRO/GOPRO_Large_all.zip)
+
+Please download the Adobe datasets from [link](https://www.dropbox.com/s/pwjbbrcyk1woqxu/adobe240.zip?dl=0)
