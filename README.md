@@ -1,5 +1,9 @@
 # Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time (CVPR2023)
 ---
+
+This repository is the official PyTorch implementation of VIDUE: Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time.
+We also provide an implementation in HUAWEI Mindspore at \url{https://github.com/Hunter-Will/VIDUE-mindspore}. 
+
 ### Introduction
 Natural videos captured by consumer cameras often suffer from low framerate and motion blur due to the combination of dynamic scene complexity, lens and sensor imperfection, and less than ideal exposure setting. As a result, computational methods that jointly perform video frame interpolation and deblurring begin to emerge with the unrealistic assumption that the exposure time is known and fixed. In this work, we aim ambitiously for a more realistic yet challenging task - joint video multi-frame interpolation and deblurring under unknown exposure time. Toward this goal, we first adopt a variant of supervised contrastive learning to construct an exposure-aware representation from input blurred frames. We then train two U-Nets for intra-motion and inter-motion analysis, respectively, adapting to the learned exposure representation via gain tuning. We finally build our video reconstruction network upon the exposure and motion representation by progressive exposure-adaptive convolution and motion refinement.
 
@@ -48,7 +52,7 @@ Pre-trained exposure-aware feature extractor on GoPro and Adobe can be downloade
 
 Download pre-trained VIDUE for [x8 interpolation on GoPro](https://pan.baidu.com/s/1_f_G2vdYowqxxiRFkiP18g?pwd=c2sf), [x8 interpolation on Adobe](https://pan.baidu.com/s/1P9hKNZBGlMe24xDLZxqHGg?pwd=h5k2), and [x16 interpolation on GoPro](https://pan.baidu.com/s/1KciF2INIjEBnGmIetC2X6g?pwd=x8uu).
 
-Please put these models to `./experiments`.
+Please put these models to `./experiments`. We also provide the download link at [Google Drive](https://drive.google.com/drive/folders/1iiQGGzsczKG8eqORqT_qq_F04CEQTQUu?usp=sharing).
 
 ## Getting Started
 
