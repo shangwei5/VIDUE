@@ -52,8 +52,9 @@ Please put models to './experiments'.
 
 ### 1) Testing
 ```
-bash Inference.sh
+python inference_vidue_worsu.py --default_data GOPRO --m 5(or 7) --n 3(or 1)
 ```
+Please change `args.data_path` according to `m` and `n`.
 The results on GoPro ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1v81oA9Tvq_zwMUMeceLVLQ)[password: d3as]
 
 
