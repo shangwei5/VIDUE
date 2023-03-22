@@ -2,7 +2,7 @@
 Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time (CVPR2023)
 ---
 ### Introduction
-Natural videos captured by consumer cameras often suffer from low framerate and motion blur due to the combination of dynamic scene complexity, lens and sensor imperfection, and less than ideal exposure setting. As a result, computational methods that jointly perform video frame interpolation and deblurring begin to emerge with the unrealistic assumption that the exposure time is known and fixed. In this work, we aim ambitiously for a more realistic yet challenging task - joint video multi-frame interpolation and deblurring under unknown exposure time. 
+Natural videos captured by consumer cameras often suffer from low framerate and motion blur due to the combination of dynamic scene complexity, lens and sensor imperfection, and less than ideal exposure setting. As a result, computational methods that jointly perform video frame interpolation and deblurring begin to emerge with the unrealistic assumption that the exposure time is known and fixed. In this work, we aim ambitiously for a more realistic yet challenging task - joint video multi-frame interpolation and deblurring under unknown exposure time. Toward this goal, we first adopt a variant of supervised contrastive learning to construct an exposure-aware representation from input blurred frames. We then train two U-Nets for intra-motion and inter-motion analysis, respectively, adapting to the learned exposure representation via gain tuning. We finally build our video reconstruction network upon the exposure and motion representation by progressive exposure-adaptive convolution and motion refinement.
 
 ### Examples of the Demo (Multi-Frame $\times$ 8 Interpolation) videos (240fps) interpolated from blurry videos (30fps)
 
@@ -107,7 +107,17 @@ Please check the dataset path according to yours.
 
 ![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/metrics_gopro16x.png)
 
-
+## Cite
+If you use any part of our code, or VIDUE is useful for your research, please consider citing:
+```
+  @InProceedings{Wei_2023_CVPR,
+      author    = {Shang, Wei and Ren, Dongwei and Yang, Yi and Zhang, Hongzhi and Ma, Kede and Zuo, Wangmeng},
+      title     = {Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      year      = {2023},
+      pages     = {0-0}
+  }
+```
 
 
 
