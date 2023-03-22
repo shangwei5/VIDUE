@@ -69,26 +69,26 @@ This is an example for generating "Adobe-5:8", please change `num_compose` and `
 
 
 ### 2) Testing
-For testing the GoPro dataset ($\times$ 8 interpolation and deblurring):
+1.For testing the GoPro dataset ($\times$ 8 interpolation and deblurring):
 ```
 python inference_vidue_worsu.py --default_data GOPRO --m 5(or 7) --n 3(or 1)
 ```
 Please change `args.data_path` according to `m` and `n`.
 The results on GoPro ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/19_og-5tDZ3Bccp2gQTzEPg?pwd=k1fp).
 
-For testing the Adobe dataset ($\times$ 8 interpolation and deblurring):
+2.For testing the Adobe dataset ($\times$ 8 interpolation and deblurring):
 ```
 python inference_vidue_worsu.py --default_data Adobe --m 5(or 7) --n 3(or 1)
 ```
 The results on Adobe ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1ko399DgXUYG5xa_bykwJ2A?pwd=gqug)
 
-For testing the GoPro dataset ($\times$ 16 interpolation and deblurring):
+3.For testing the GoPro dataset ($\times$ 16 interpolation and deblurring):
 ```
 python inference_vidue_worsu_16x.py --default_data GOPRO --m 9(or 11,13,15) --n 7(or 5,3,1)
 ```
 The results on GoPro ($\times$ 16 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1efzyoyDSWWPlEm_bCTfhGw?pwd=fyhu)
 
-For testing the real world dataset:
+4.For testing the real world dataset:
 ```
 python inference_vidue_worsu_real.py
 ```
