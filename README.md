@@ -14,3 +14,8 @@ Natural videos captured by consumer cameras often suffer from low framerate and 
 
 ![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/IMG_0183.gif)
 
+
+## Prerequisites
+- Python >= 3.8, PyTorch >= 1.7.0 (A lower version may also be OK.)
+- Requirements: opencv-python, numpy, matplotlib, imageio, scikit-image, tqdm
+
