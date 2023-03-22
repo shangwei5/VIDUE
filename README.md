@@ -6,11 +6,11 @@ Natural videos captured by consumer cameras often suffer from low framerate and 
 
 ### Examples of the Demo (Multi-Frame Interpolation x8) videos (240fps) interpolated from blurry videos (30fps)
 
-![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/GOPR0410_11_00.gif）
+![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/GOPR0410_11_00.gif)
 
 ![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/GOPR0384_11_05.gif)
 
-![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/IMG_0015.gif）
+![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/IMG_0015.gif)
 
-![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/IMG_0183.gif）
+![image](https://github.com/shangwei5/VIDUE/blob/main/Figures/IMG_0183.gif)
 
