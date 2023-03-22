@@ -2,7 +2,7 @@
 ---
 
 This repository is the official PyTorch implementation of VIDUE: Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time.
-We also provide an implementation in HUAWEI Mindspore at \url{https://github.com/Hunter-Will/VIDUE-mindspore}. 
+We also provide an implementation in HUAWEI Mindspore at [Mindspore](https://github.com/Hunter-Will/VIDUE-mindspore). 
 
 ### Introduction
 Natural videos captured by consumer cameras often suffer from low framerate and motion blur due to the combination of dynamic scene complexity, lens and sensor imperfection, and less than ideal exposure setting. As a result, computational methods that jointly perform video frame interpolation and deblurring begin to emerge with the unrealistic assumption that the exposure time is known and fixed. In this work, we aim ambitiously for a more realistic yet challenging task - joint video multi-frame interpolation and deblurring under unknown exposure time. Toward this goal, we first adopt a variant of supervised contrastive learning to construct an exposure-aware representation from input blurred frames. We then train two U-Nets for intra-motion and inter-motion analysis, respectively, adapting to the learned exposure representation via gain tuning. We finally build our video reconstruction network upon the exposure and motion representation by progressive exposure-adaptive convolution and motion refinement.
