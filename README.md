@@ -23,3 +23,24 @@ Natural videos captured by consumer cameras often suffer from low framerate and 
 Please download the GoPro datasets from [link](http://data.cv.snu.ac.kr:8008/webdav/dataset/GOPRO/GOPRO_Large_all.zip)
 
 Please download the Adobe datasets from [link](https://www.dropbox.com/s/pwjbbrcyk1woqxu/adobe240.zip?dl=0)
+
+### Dataset Organization Form
+```
+|--dataset
+    |--train  
+        |--video 1
+            |--frame 1
+            |--frame 2
+                ：  
+        |--video 2
+            :
+        |--video n
+    |--test
+        |--video 1
+            |--frame 1
+            |--frame 2
+                ：  
+        |--video 2
+         :
+        |--video n
+```
