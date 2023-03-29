@@ -3,7 +3,7 @@
 ---
 [[PDF](https://github.com/shangwei5/VIDUE/blob/main/paper/main.pdf)] [[Supp](https://github.com/shangwei5/VIDUE/blob/main/paper/supplementary.pdf)] [[arXiv](https://arxiv.org/abs/2303.15043)]
 
-![Github Stars](https://img.shields.io/github/stars/shangwei5/VIDUE.svg) ![Github Fork](https://img.shields.io/github/fork/shangwei5/VIDUE.svg) 
+![Github Stars](https://img.shields.io/github/stars/shangwei5/VIDUE?style=social)  
 
 This repository is the official PyTorch implementation of VIDUE: Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time.
 We also provide an implementation in HUAWEI Mindspore at [Mindspore](https://github.com/Hunter-Will/VIDUE-mindspore). 
