@@ -84,13 +84,13 @@ The results on GoPro ($\times$ 8 interpolation and deblurring) are also availabl
 ```
 python inference_vidue_worsu.py --default_data Adobe --m 5(or 7) --n 3(or 1)
 ```
-The results on Adobe ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1ko399DgXUYG5xa_bykwJ2A?pwd=gqug)
+The results on Adobe ($\times$ 8 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1ko399DgXUYG5xa_bykwJ2A?pwd=gqug).
 
 3.For testing the GoPro dataset ($\times$ 16 interpolation and deblurring):
 ```
 python inference_vidue_worsu_16x.py --default_data GOPRO --m 9(or 11,13,15) --n 7(or 5,3,1)
 ```
-The results on GoPro ($\times$ 16 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1efzyoyDSWWPlEm_bCTfhGw?pwd=fyhu)
+The results on GoPro ($\times$ 16 interpolation and deblurring) are also available at [BaiduYun](https://pan.baidu.com/s/1efzyoyDSWWPlEm_bCTfhGw?pwd=fyhu).
 
 4.For testing the real world dataset:
 ```
