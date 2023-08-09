@@ -1,7 +1,7 @@
 # Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time (CVPR2023)
 #### Wei Shang, Dongwei Ren<sup>*</sup>, Yi Yang, Hongzhi Zhang, Kede Ma, Wangmeng Zuo 
 ---
-[[PDF](https://github.com/shangwei5/VIDUE/blob/main/paper/main.pdf)] [[Supp](https://github.com/shangwei5/VIDUE/blob/main/paper/supplementary.pdf)] [[arXiv](https://arxiv.org/abs/2303.15043)]
+[[PDF](https://openaccess.thecvf.com/content/CVPR2023/papers/Shang_Joint_Video_Multi-Frame_Interpolation_and_Deblurring_Under_Unknown_Exposure_Time_CVPR_2023_paper.pdf)] [[Supp](https://github.com/shangwei5/VIDUE/blob/main/paper/supplementary.pdf)] [[arXiv](https://arxiv.org/abs/2303.15043)]
 
 ![Github Stars](https://img.shields.io/github/stars/shangwei5/VIDUE?style=social) ![visitors](https://visitor-badge.glitch.me/badge?page_id=shangwei5/VIDUE)
 
