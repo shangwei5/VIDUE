@@ -122,14 +122,13 @@ Please check the dataset path according to yours.
 ## Cite
 If you use any part of our code, or VIDUE is useful for your research, please consider citing:
 ```
-  @InProceedings{Shang_2023_CVPR,
-    author    = {Shang, Wei and Ren, Dongwei and Yang, Yi and Zhang, Hongzhi and Ma, Kede and Zuo, Wangmeng},
-    title     = {Joint Video Multi-Frame Interpolation and Deblurring Under Unknown Exposure Time},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2023},
-    pages     = {13935-13944}
-  }
+@inproceedings{shang2023joint,
+  title={Joint Video Multi-Frame Interpolation and Deblurring under Unknown Exposure Time},
+  author={Shang, Wei and Ren, Dongwei and Yang, Yi and Zhang, Hongzhi and Ma, Kede and Zuo, Wangmeng},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={13935--13944},
+  year={2023}
+}
 ```
 
 ## Contact
